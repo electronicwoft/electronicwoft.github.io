@@ -1,0 +1,74 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+<title>aria-expanded and aria-haspopup
+</title>
+<meta charset="utf-8">
+,<style>
+*
+	{background: black;
+	color: white;}
+th, td
+	{height: 2em;
+	width: 20%;
+	padding: 2em;
+	text-align: left;
+	border: 1px solid;}
+
+</style>
+</head>
+<body style="background: black; color: white; margin: 1em auto; width: 50%;">
+<button type="button" aria-expanded="false">sans aria-haspopup
+</button>
+<div style="height: 2em;">
+</div>
+<button type="button" aria-haspopup="true" aria-expanded="false">aria-haspopup
+</button>
+<div style="height: 2em;">
+</div>
+<a style="text-decoration: none; padding: 0.25em 1em; outline: 1px solid;"href="#" role="button" aria-expanded="false" aria-haspopup="true">aria-haspopup
+</a>
+<div style="height: 2em;">
+</div>
+<table>
+<caption>does JAWS announce aria-expanded when aria-haspopup is present on a Windows 10 PC?</caption>
+<tr>
+	<td>&nbsp;
+	</td>
+	<th>Chrome 75.0.3770.100
+	</th>
+	<th>Firefox 67.0.4
+	</th>
+	<th>IE11
+	</th>
+	<th>Edge
+	</th>
+</tr>
+<tr>
+	<td>JAWS2019
+	</td>
+	<td>tab focused = no and quickkey navigation = no
+	</td>
+	<td>tab focused = no and quickkey navigation = yes on both HTML button and hyperlink
+	</td>
+	<td>tab focused = no and quickkey navigation = yes on both HTML button and hyperlink
+	</td>
+	<td>not available
+	</td>
+</tr>
+<tr>
+	<td>JAWS18
+	</td>
+	<td>tab focused = no and quickkey navigation = no
+	</th>
+	<td>incompatible
+	</td>
+	<td>tab focused = no and quickkey navigation = yes on both HTML button and hyperlink
+	</td>
+	<td>not available
+	</td>
+</tr>
+</table>
+</body>
+</html>

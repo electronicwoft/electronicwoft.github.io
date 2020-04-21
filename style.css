@@ -199,8 +199,7 @@ body
 	padding: 1em;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
-.card-gb:focus
-	{border-color: #6a2875;
-	outline: none;
-	outline-width: 0px;}
 
+.card-gb:focus
+	{outline: 2px solid #6a2875;
+	outline-offset: 2px;}

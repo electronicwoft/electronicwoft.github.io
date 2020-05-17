@@ -1,69 +1,38 @@
 window.onload = function() {
-toggle = 0;
-const w = document.getElementById("__xmlview16--Gender-label");
-const x = document.getElementById("__xmlview16--Gender");
-const y = document.getElementById("__list80");
-const z = y.children;
-let p = z.textContent
 
-x.addEventListener("click", function() {
-if(toggle === 0) {
-show();
-toggle = 1;
-} else if
-(toggle === 1){
-hide();
 toggle = 0;
+
+const b1 = document.getElementById("b1");
+const s1 = document.getElementById("s1");
+const i1 = document.getElementById("i1");
+const l1 = document.getElementById("l1");
+
+window.addEventListener("click", function(e) {
+if(e.target === b1) {
+show();
 }
 });
-
-window.addEventListener("keydown", function(e) {
-
-if(e.target === x ) {
-if(e.altKey && e.which === 40 && toggle === 0) {
-show();
-toggle = 1;
-}
-}
-
-
-
-
-
-
-
-
-if(e.target === x ) {
-if((e.which === 27 || event.which === 9) && toggle === 1) {
-hide();
-toggle = 0;
-}
-}
-
-
-
-
-
-
-});
-
-
-
-
-
-
-
-
-
 function show() {
-x.setAttribute("aria-expanded","true");
-y.style.display = "block";
-z[0].focus();
+if(toggle === 0) {
+b1.setAttribute("aria-expanded","true");
+s1.style.display ="block";
+s1.style.width = "20vw";
 }
-function hide() {
-x.setAttribute("aria-expanded","false");
-y.style.display = "none";
 }
+
+window.addEventListener("input", function(e) {
+if(e.target === i1) {
+l1.style.display = "block";
+
+}
+});
+window.addEventListener("keydown", function(e) {
+if(e.which === 27) {
+alert();
+}
+});
+
+
 
 
 };

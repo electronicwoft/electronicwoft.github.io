@@ -1,27 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf8">
+<title>
+</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script src="script.js">
+</script>
 </head>
 <body>
-<span id="__xmlview16--LBGender">gender</span>
-<div class="sapUiRespGridSpanL10 sapUiRespGridSpanM10 sapUiRespGridSpanS12 sapUiRespGridSpanXL10">
-	<div id="__xmlview16--Gender" data-sap-ui="__xmlview16--Gender" class="sapMSlt sapMSltDefault sapMSltHoverable sapMSltWithArrow" aria-labelledby="__xmlview16--LBGender" aria-describedby="__xmlview16--Gender-label" role="combobox" aria-expanded="false" aria-live="off" tabindex="0" aria-controls="__list80" aria-required="false">
-		<label id="__xmlview16--Gender-label" class="sapMSltLabel">Female
-		</label>
-		<span id="__xmlview16--Gender-arrow" class="sapMSltArrow">
-		</span>
-		<ul id="__list80" data-sap-ui="__list80" style="width:100%;max-width:100%" class="sapMSelectList sapMSltList-CTX" role="listbox">
-			<li id="__item232-__xmlview16--Gender-0" data-sap-ui="__item232-__xmlview16--Gender-0" tabindex="0" class="sapMSelectListItem sapMSelectListItemBase sapMSelectListItemBaseHoverable" role="option" aria-selected="false" aria-setsize="3" aria-posinset="1">Unspecified
-			</li>
-			<li id="__item232-__xmlview16--Gender-1" data-sap-ui="__item232-__xmlview16--Gender-1" tabindex="0" class="sapMSelectListItem sapMSelectListItemBase sapMSelectListItemBaseHoverable" role="option" aria-selected="false" aria-setsize="3" aria-posinset="2">Male
-			</li>
-			<li id="__item232-__xmlview16--Gender-2" data-sap-ui="__item232-__xmlview16--Gender-2" tabindex="0" class="sapMSelectListItem sapMSelectListItemBase sapMSelectListItemBaseHoverable sapMSelectListItemBaseSelected" role="option" aria-selected="true" aria-setsize="3" aria-posinset="3">Female
-			</li>
-		</ul>
-	</div>
+<button id="b1" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="s1">
+Search
+</button>
+
+<div id="s1" role="search">
+<div role="tablist">
+<a id="t1" href="#tp1" aria-selected="true" role="tab">
+Basic Search
+</a>
+<a id="t2" href="#tp2" aria-selected="false" role="tab">
+Advanced Search
+</a>
+</div>
+<div aria-labelledby="t1" role="tabpanel" id="tp1">
+<input type="search" id="i1" role="combobox" aria-controls="l1" aria-haspopup="listbox" aria-labelledby="b2">
+
+
+<ul id="l1" aria-label="search history" role="listbox">
+<li role="option">search history 1</li>
+<li role="option">search history 2</li>
+<li role="option">search history 3</li>
+<li role="option">search history 4</li>
+<li role="option">search history 5</li>
+<li role="option">search history 6</li>
+<li role="option">search history 7</li>
+<li role="option">search history 8</li>
+<li role="option">search history 9</li>
+<li role="option">search history 10</li>
+</ul>
+
+<button id="b2" type="button">search</button>
+</div>
+<div aria-labelledby="t2" role="tabpanel" id="tp2">
+
+</div>
+
 </div>
 </body>
 </html>

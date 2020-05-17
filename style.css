@@ -1,12 +1,37 @@
 body
 	{margin: 5em auto;
-	width: 60em;}
+	background: black;
+	color: white;
+	font-family: arial;
+	font-size: 100%;}
 
-#__xmlview16--Gender
-	{border: 1px solid;
-	height: 3em;
-	line-height: 3em;
-	width: 12em;}
+#s1
+	{height: 80vh;
+	width: 20vw;
+	display: none;
+	position: relative;
+	top: -2.75em;
+	left: 0em;
+	z-index: 1;
+	background: inherit;
+	color: inherit;
+	padding: 1em 1.5em;
+	margin: 0;
+	border: 1px solid;
+	border-radius: 0px 4px 4px 0px;}
 
-#__list80
-	{display: none;}
+#b1
+	{wifh: auto;
+	max-height: 2.75em;
+	min-height: 2.75em;
+	line-height: 100%;
+	font-size: inherit;
+	padding: 1em 1.5em;
+	margin: 0 0 0 5em;}
+
+#l1
+	{display: none;
+	list-style: none;}
+
+
+
